@@ -1,0 +1,348 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Premium Mechanical Keyboard RGB Backlit Gaming",
+      "originalPrice": 7999,
+      "discountedPrice": 2499,
+      "discountPercent": 69,
+      "stock": 15,
+      "rating": 4.8,
+      "reviewCount": 3241,
+      "inStock": true,
+      "description": "Elevate your gaming and typing experience with our Premium Mechanical Keyboard. Featuring tactile mechanical switches, customizable RGB backlighting, and a solid build quality. Designed for endurance and peak performance.",
+      "images": [
+        "https://picsum.photos/seed/kbd1/400/400",
+        "https://picsum.photos/seed/kbd2/400/400",
+        "https://picsum.photos/seed/kbd3/400/400",
+        "https://picsum.photos/seed/kbd4/400/400"
+      ],
+      "sizes": ["Blue Switch", "Red Switch", "Brown Switch"],
+      "colors": ["#1A1A1A", "#E5E5E5"],
+      "delivery": {
+        "time": "2-3 days",
+        "charge": "Free",
+        "returnPolicy": "7 days return"
+      },
+      "reviews": [
+        {
+          "id": "r1",
+          "name": "Ahmed Khan",
+          "avatar": "https://picsum.photos/seed/rv1/80/80",
+          "rating": 5,
+          "date": "2 days ago",
+          "text": "Excellent quality! The sound is crystal clear and noise cancellation works perfectly. Highly recommended!",
+          "photo": null
+        },
+        {
+          "id": "r2",
+          "name": "Fatima Hassan",
+          "avatar": "https://picsum.photos/seed/rv2/80/80",
+          "rating": 4,
+          "date": "1 week ago",
+          "text": "Great keyboard. Custom lighting is bright. Typing sound is solid.",
+          "photo": null
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Minimalist Leather Wallet RFID Blocking Slim",
+      "originalPrice": 2299,
+      "discountedPrice": 849,
+      "discountPercent": 63,
+      "stock": 28,
+      "rating": 4.6,
+      "reviewCount": 1872,
+      "inStock": true,
+      "description": "Crafted from premium genuine leather, this slim wallet features advanced RFID blocking technology to keep your cards secure. Fits up to 10 cards and cash comfortably without bulging.",
+      "images": [
+        "https://picsum.photos/seed/wal1/400/400",
+        "https://picsum.photos/seed/wal2/400/400",
+        "https://picsum.photos/seed/wal3/400/400"
+      ],
+      "sizes": ["Standard"],
+      "colors": ["#3E2723", "#1A1A1A", "#4E342E"],
+      "delivery": {
+        "time": "3-4 days",
+        "charge": "Free",
+        "returnPolicy": "7 days return"
+      },
+      "reviews": []
+    },
+    {
+      "id": "3",
+      "name": "Stainless Steel Water Bottle Insulated 1L",
+      "originalPrice": 3500,
+      "discountedPrice": 1199,
+      "discountPercent": 66,
+      "stock": 40,
+      "rating": 4.7,
+      "reviewCount": 6541,
+      "inStock": true,
+      "description": "Double-walled vacuum insulated stainless steel water bottle keeps your drinks cold for 24 hours or hot for 12 hours. Durable powder coat finish with leak-proof cap.",
+      "images": [
+        "https://picsum.photos/seed/bot1/400/400",
+        "https://picsum.photos/seed/bot2/400/400"
+      ],
+      "sizes": ["500ml", "750ml", "1000ml"],
+      "colors": ["#00838F", "#37474F", "#C62828", "#2E7D32"],
+      "delivery": {
+        "time": "2-3 days",
+        "charge": "Free",
+        "returnPolicy": "7 days return"
+      },
+      "reviews": []
+    },
+    {
+      "id": "4",
+      "name": "USB-C Hub 7-in-1 Multi-port Adapter for Laptop",
+      "originalPrice": 4499,
+      "discountedPrice": 1649,
+      "discountPercent": 63,
+      "stock": 12,
+      "rating": 4.5,
+      "reviewCount": 2109,
+      "inStock": true,
+      "description": "Expand your laptop with a 4K HDMI port, 3 USB 3.0 ports, SD/TF Card Readers, and a 100W Power Delivery pass-through charging port. Sleek aluminum alloy housing matches premium laptops.",
+      "images": [
+        "https://picsum.photos/seed/hub1/400/400",
+        "https://picsum.photos/seed/hub2/400/400"
+      ],
+      "sizes": ["7-in-1", "9-in-1"],
+      "colors": ["#78909C", "#37474F"],
+      "delivery": {
+        "time": "2-3 days",
+        "charge": "Free",
+        "returnPolicy": "7 days return"
+      },
+      "reviews": []
+    },
+    {
+      "id": "5",
+      "name": "Yoga Mat Non-Slip Thick Exercise Fitness",
+      "originalPrice": 3999,
+      "discountedPrice": 1399,
+      "discountPercent": 65,
+      "stock": 20,
+      "rating": 4.9,
+      "reviewCount": 8820,
+      "inStock": true,
+      "description": "Premium eco-friendly TPE yoga mat with textured non-slip surface provides excellent traction and grip. 6mm optimal thickness offers superior cushioning and joint support.",
+      "images": [
+        "https://picsum.photos/seed/mat1/400/400",
+        "https://picsum.photos/seed/mat2/400/400"
+      ],
+      "sizes": ["6mm Regular", "8mm Extra Thick"],
+      "colors": ["#6A1B9A", "#00695C", "#AD1457"],
+      "delivery": {
+        "time": "3-5 days",
+        "charge": "Free",
+        "returnPolicy": "7 days return"
+      },
+      "reviews": []
+    },
+    {
+      "id": "6",
+      "name": "Wireless Charging Pad 15W Fast Charge",
+      "originalPrice": 1999,
+      "discountedPrice": 799,
+      "discountPercent": 60,
+      "stock": 18,
+      "rating": 4.4,
+      "reviewCount": 953,
+      "inStock": true,
+      "description": "Super slim 15W Qi-certified wireless charging pad with intelligent temperature controls. Anti-slip rubber rings on top and bottom keep your device secure.",
+      "images": [
+        "https://picsum.photos/seed/chg1/400/400",
+        "https://picsum.photos/seed/chg2/400/400"
+      ],
+      "sizes": ["Standard"],
+      "colors": ["#1A1A1A", "#FFFFFF"],
+      "delivery": {
+        "time": "2-3 days",
+        "charge": "₨150",
+        "returnPolicy": "7 days return"
+      },
+      "reviews": []
+    },
+    {
+      "id": "7",
+      "name": "Portable Bluetooth Speaker Waterproof IPX7",
+      "originalPrice": 5999,
+      "discountedPrice": 1999,
+      "discountPercent": 67,
+      "stock": 8,
+      "rating": 4.7,
+      "reviewCount": 4412,
+      "inStock": true,
+      "description": "IPX7 waterproof portable speaker delivers rich bass and clear 360-degree sound. Features 24-hour playtime and a rugged exterior design perfect for outdoor adventures.",
+      "images": [
+        "https://picsum.photos/seed/spk1/400/400",
+        "https://picsum.photos/seed/spk2/400/400"
+      ],
+      "sizes": ["Standard"],
+      "colors": ["#C62828", "#1A1A1A", "#1565C0"],
+      "delivery": {
+        "time": "2-3 days",
+        "charge": "Free",
+        "returnPolicy": "7 days return"
+      },
+      "reviews": []
+    },
+    {
+      "id": "8",
+      "name": "Resistance Bands Set Workout Exercise Home Gym",
+      "originalPrice": 1499,
+      "discountedPrice": 599,
+      "discountPercent": 60,
+      "stock": 35,
+      "rating": 4.6,
+      "reviewCount": 7123,
+      "inStock": true,
+      "description": "Set of 5 color-coded professional latex bands ranging from 10lbs to 50lbs. Includes foam handles, ankle straps, door anchor, and carrying bag for a complete home gym setup.",
+      "images": [
+        "https://picsum.photos/seed/bnd1/400/400",
+        "https://picsum.photos/seed/bnd2/400/400"
+      ],
+      "sizes": ["Full Set (11pcs)"],
+      "colors": ["#FFC107"],
+      "delivery": {
+        "time": "2-4 days",
+        "charge": "Free",
+        "returnPolicy": "7 days return"
+      },
+      "reviews": []
+    },
+    {
+      "id": "deal_1",
+      "name": "Wireless Earbuds Pro",
+      "originalPrice": 4500,
+      "discountedPrice": 999,
+      "discountPercent": 78,
+      "stock": 10,
+      "rating": 4.5,
+      "reviewCount": 423,
+      "inStock": true,
+      "description": "Experience true wireless freedom with our Wireless Earbuds Pro. Featuring touch controls, premium active noise cancellation, and a pocket-friendly smart charging case.",
+      "images": [
+        "https://picsum.photos/seed/deal1/400/400",
+        "https://picsum.photos/seed/deal1b/400/400"
+      ],
+      "sizes": ["Standard"],
+      "colors": ["#FFFFFF", "#1A1A1A"],
+      "delivery": { "time": "2-3 days", "charge": "Free", "returnPolicy": "7 days return" },
+      "reviews": []
+    },
+    {
+      "id": "deal_2",
+      "name": "Smart Watch Ultra",
+      "originalPrice": 8900,
+      "discountedPrice": 1999,
+      "discountPercent": 77,
+      "stock": 12,
+      "rating": 4.7,
+      "reviewCount": 812,
+      "inStock": true,
+      "description": "Advanced sports tracker smartwatch with always-on AMOLED display, built-in GPS, heart rate monitor, sleep tracking, and up to 10 days of battery life.",
+      "images": [
+        "https://picsum.photos/seed/deal2/400/400",
+        "https://picsum.photos/seed/deal2b/400/400"
+      ],
+      "sizes": ["44mm", "49mm"],
+      "colors": ["#FFA726", "#37474F", "#78909C"],
+      "delivery": { "time": "2-3 days", "charge": "Free", "returnPolicy": "7 days return" },
+      "reviews": []
+    },
+    {
+      "id": "deal_3",
+      "name": "LED Desk Lamp",
+      "originalPrice": 2900,
+      "discountedPrice": 799,
+      "discountPercent": 72,
+      "stock": 15,
+      "rating": 4.6,
+      "reviewCount": 310,
+      "inStock": true,
+      "description": "Modern LED desk lamp with 5 brightness levels and 3 color modes. Features a USB charging port, touch controls, and a fully adjustable folding arm.",
+      "images": [
+        "https://picsum.photos/seed/deal3/400/400",
+        "https://picsum.photos/seed/deal3b/400/400"
+      ],
+      "sizes": ["Standard"],
+      "colors": ["#FFFFFF", "#1A1A1A"],
+      "delivery": { "time": "3-4 days", "charge": "Free", "returnPolicy": "7 days return" },
+      "reviews": []
+    },
+    {
+      "id": "deal_4",
+      "name": "Portable Charger 20000mAh",
+      "originalPrice": 3900,
+      "discountedPrice": 1299,
+      "discountPercent": 67,
+      "stock": 22,
+      "rating": 4.8,
+      "reviewCount": 1450,
+      "inStock": true,
+      "description": "High-capacity 20000mAh external battery power bank. Equipped with dual USB-A ports and a USB-C port for fast charging multiple devices simultaneously.",
+      "images": [
+        "https://picsum.photos/seed/deal4/400/400",
+        "https://picsum.photos/seed/deal4b/400/400"
+      ],
+      "sizes": ["20000mAh"],
+      "colors": ["#1A1A1A", "#FFFFFF"],
+      "delivery": { "time": "2-3 days", "charge": "Free", "returnPolicy": "7 days return" },
+      "reviews": []
+    }
+  ],
+  "businesses": [
+    {
+      "id": "1",
+      "name": "Al-Farid Restaurant",
+      "type": "Restaurant",
+      "image": "https://picsum.photos/seed/rest1/200/200",
+      "rating": 4.8,
+      "address": "Gulberg III, Lahore"
+    },
+    {
+      "id": "2",
+      "name": "Tech Haven Shop",
+      "type": "Shop",
+      "image": "https://picsum.photos/seed/shop1/200/200",
+      "rating": 4.5,
+      "address": "Hafeez Center, Lahore"
+    },
+    {
+      "id": "3",
+      "name": "Bismillah Biryani",
+      "type": "Restaurant",
+      "image": "https://picsum.photos/seed/rest2/200/200",
+      "rating": 4.9,
+      "address": "Johar Town, Lahore"
+    },
+    {
+      "id": "4",
+      "name": "Fashion Point",
+      "type": "Shop",
+      "image": "https://picsum.photos/seed/shop2/200/200",
+      "rating": 4.2,
+      "address": "Liberty Market, Lahore"
+    },
+    {
+      "id": "5",
+      "name": "Burger Corner",
+      "type": "Restaurant",
+      "image": "https://picsum.photos/seed/rest3/200/200",
+      "rating": 4.6,
+      "address": "DHA Phase 5, Lahore"
+    },
+    {
+      "id": "6",
+      "name": "Mega Mart Grocery",
+      "type": "Shop",
+      "image": "https://picsum.photos/seed/shop3/200/200",
+      "rating": 4.7,
+      "address": "Wapda Town, Lahore"
+    }
+  ]
+}
