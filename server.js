@@ -20,6 +20,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use('/public', express.static(path.join(__dirname, 'public')));
+app.use('/downloads', express.static(path.join(__dirname, 'public', 'downloads')));
 
 // Request logger middleware
 app.use((req, res, next) => {
