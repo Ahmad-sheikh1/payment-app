@@ -394,5 +394,17 @@ module.exports = {
       saveLocalDB();
       return newBus;
     }
+  },
+
+  createProduct: async (productData) => {
+    if (db.isPostgresConnected()) {
+      return await Product.create(productData);
+    } else {
+      const id = 'prod_' + Date.now() + Math.random().toString(36).substr(2, 5);
+      const newProd = { _id: id, id, ...productData, createdAt: new Date() };
+      localDB.products.push(newProd);
+      saveLocalDB();
+      return newProd;
+    }
   }
 };

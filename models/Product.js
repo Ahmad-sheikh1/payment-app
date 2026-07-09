@@ -62,6 +62,14 @@ const Product = sequelize.define('Product', {
     type: DataTypes.JSON,
     defaultValue: [],
   },
+  merchantId: {
+    type: DataTypes.STRING,
+    allowNull: true,
+  },
+  category: {
+    type: DataTypes.STRING,
+    allowNull: true,
+  },
 });
 
 module.exports = Product;
