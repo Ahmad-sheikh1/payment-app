@@ -17,7 +17,7 @@ const generateToken = (user) => {
 };
 
 exports.signup = async (req, res) => {
-  const { fullName, email, phone, cnic, password, businessType, images } = req.body;
+  const { fullName, email, phone, cnic, password, businessType, role: requestRole, images } = req.body;
 
   try {
     if (!fullName || !email || !password) {
@@ -34,10 +34,14 @@ exports.signup = async (req, res) => {
     const salt = await bcrypt.genSalt(10);
     const hashedPassword = await bcrypt.hash(password, salt);
 
-    // Map businessType to Role: 'Shop' or 'Restaurant', or fallback to 'Customer'
+    // Map businessType/role to Role: 'Shop' or 'Restaurant', or fallback to 'Customer'
+    const selectedBusinessType = businessType || requestRole;
     let role = 'Customer';
-    if (businessType === 'Shop' || businessType === 'Restaurant') {
-      role = businessType;
+    if (selectedBusinessType && (
+      selectedBusinessType.toLowerCase() === 'shop' || 
+      selectedBusinessType.toLowerCase() === 'restaurant'
+    )) {
+      role = selectedBusinessType.charAt(0).toUpperCase() + selectedBusinessType.slice(1).toLowerCase();
     }
 
     // Save user to dataStore
@@ -50,6 +54,24 @@ exports.signup = async (req, res) => {
       role,
       images: images || []
     });
+
+    // Create a dynamic Business entry for the merchant
+    if (role === 'Shop' || role === 'Restaurant') {
+      const defaultImages = {
+        Shop: 'https://picsum.photos/seed/shop1/200/200',
+        Restaurant: 'https://picsum.photos/seed/rest1/200/200'
+      };
+      const businessImage = (images && images.length > 0) ? images[0] : defaultImages[role];
+      
+      await dataStore.createBusiness({
+        id: 'bus_' + (user.id || user._id),
+        name: fullName,
+        type: role,
+        image: businessImage,
+        rating: 5.0,
+        address: 'Lahore, Pakistan'
+      });
+    }
 
     const token = generateToken(user);
 
