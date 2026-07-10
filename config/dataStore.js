@@ -406,5 +406,20 @@ module.exports = {
       saveLocalDB();
       return newProd;
     }
+  },
+
+  getOrdersByMerchant: async (merchantId) => {
+    if (db.isPostgresConnected()) {
+      return await Order.findAll({
+        where: {
+          [Op.or]: [{ merchantId }, { merchantId: 'bus_' + merchantId }]
+        },
+        order: [['createdAt', 'DESC']]
+      });
+    } else {
+      return (localDB.orders || [])
+        .filter(o => o.merchantId === merchantId || o.merchantId === 'bus_' + merchantId)
+        .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+    }
   }
 };

@@ -1,8 +1,8 @@
 const dataStore = require('../config/dataStore');
 
 exports.placeOrder = async (req, res) => {
-  const userId = req.user.id || req.user._id;
-  const { items, subtotal, deliveryCharge, discount, total, paymentMethod, address } = req.body;
+  const userId = req.user ? (req.user.id || req.user._id) : 'guest_customer';
+  const { items, subtotal, deliveryCharge, discount, total, paymentMethod, address, merchantId, shopName } = req.body;
 
   try {
     if (!items || !items.length || subtotal === undefined || total === undefined || !paymentMethod || !address) {
@@ -20,7 +20,9 @@ exports.placeOrder = async (req, res) => {
       discount: discount || 0,
       total,
       paymentMethod,
-      address
+      address,
+      merchantId: merchantId || '',
+      shopName: shopName || ''
     });
 
     res.status(201).json(order);
@@ -91,5 +93,16 @@ exports.trackOrder = async (req, res) => {
   } catch (error) {
     console.error('Track order error:', error);
     res.status(500).json({ message: 'Server error retrieving order tracking' });
+  }
+};
+
+exports.getMerchantOrders = async (req, res) => {
+  const { merchantId } = req.params;
+  try {
+    const orders = await dataStore.getOrdersByMerchant(merchantId);
+    res.json(orders);
+  } catch (error) {
+    console.error('Get merchant orders error:', error);
+    res.status(500).json({ message: 'Server error retrieving merchant orders' });
   }
 };

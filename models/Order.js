@@ -52,6 +52,14 @@ const Order = sequelize.define('Order', {
     type: DataTypes.JSON,
     allowNull: false,
   },
+  merchantId: {
+    type: DataTypes.STRING,
+    allowNull: true,
+  },
+  shopName: {
+    type: DataTypes.STRING,
+    allowNull: true,
+  },
 });
 
 module.exports = Order;
